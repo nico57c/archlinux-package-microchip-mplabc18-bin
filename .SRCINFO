@@ -1,0 +1,27 @@
+pkgbase = microchip-mplabc18-bin
+	pkgdesc = C compiler for PIC18 MCUs
+	pkgver = 3.47
+	pkgrel = 2.1
+	url = http://www.microchip.com/c18
+	install = microchip-mplabc18-bin.install
+	arch = x86_64
+	license = custom
+	makedepends = lib32-tclkit
+	depends = lib32-gcc-libs
+	provides = mplabc18
+	provides = microchip-mplabc18_bin
+	conflicts = mplabc18
+	conflicts = microchip-mplabc18_bin
+	options = !strip
+	options = docs
+	options = libtool
+	options = emptydirs
+	options = !zipman
+	options = staticlibs
+	source = https://github.com/Manouchehri/Microchip-C18-Lite/releases/download/v3.47/mplabc18-v3.47-linux-lite-installer.run
+	source = bitrock-unpacker.tcl
+	md5sums = 1b79f6a55215fb2b1608e97f30bdc095
+	md5sums = 70dedba4c417f8c0bb07c32d19e9d197
+
+pkgname = microchip-mplabc18-bin
+
